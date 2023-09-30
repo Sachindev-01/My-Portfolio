@@ -1,8 +1,10 @@
+import Header from "./components/Header/Header";
+
 function App() {
   return (
-    <>
-      <h1 className="text-center mt-6 text-black font-bold">My Portfolio</h1>
-    </>
+    <div className="bg-[#081d2f] w-full h-screen">
+      <Header />
+    </div>
   );
 }
 
