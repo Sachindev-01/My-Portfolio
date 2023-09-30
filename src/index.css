@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.changeWord::after {
+    content: var(--word-content, "Web developer"); 
+    animation: wordChange 3s linear infinite alternate;
+  }
+  
+  @keyframes wordChange {
+    0% {
+      --word-content: "Web developer";
+    }
+    50% {
+      color: #081d2f;
+    }
+    100% {
+      --word-content: "Student";
+    }
+  }
+  
+  

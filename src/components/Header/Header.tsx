@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <section className="w-full bg-transparent">
       <header className="max-w-7xl mx-auto px-4 py-3 fixed left-0 right-0 z-40">
-        <nav className="lg:flex lg:space-x-12">
+        <nav className="lg:flex lg:space-x-12 absolute">
           {toggle ? (
             <RxCrossCircled
               onClick={() => setToggle((prev) => !prev)}
@@ -28,7 +28,7 @@ const Header = () => {
             navigationUrls.map(({ urlName, url }) => (
               <div
                 key={urlName}
-                className="lg:hidden flex flex-col justify-center"
+                className="lg:hidden flex flex-col justify-center font-medium"
               >
                 <NavLink urlName={urlName} url={url} handleToggle={setToggle} />
               </div>
