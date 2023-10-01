@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { RxCrossCircled } from "react-icons/rx";
 
@@ -7,11 +7,35 @@ import { navigationUrls } from "../../utils/constant";
 
 const Header = () => {
   const [toggle, setToggle] = useState<boolean>(false);
+  const [isScrolling, setIsScrolling] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setToggle(false);
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="w-full bg-transparent">
-      <header className="max-w-7xl mx-auto px-4 py-3 fixed left-0 right-0 z-40">
-        <nav className="lg:flex lg:space-x-12 absolute">
+    <section className="fixed h-24 w-full bg-transparent lg:backdrop-blur-md">
+      <header className="max-w-7xl mx-auto px-4 py-3 fixed left-0 right-0 z-40 ">
+        <nav
+          className={`${
+            isScrolling
+              ? "bg-[#374151] rounded-md lg:rounded-none lg:bg-transparent"
+              : ""
+          } lg:flex lg:space-x-12 absolute`}
+        >
           {toggle ? (
             <RxCrossCircled
               onClick={() => setToggle((prev) => !prev)}
