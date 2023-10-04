@@ -123,7 +123,7 @@ export const languages = [
   {
     name: "expressjs",
     icon: (
-      <p className="flex-center pd-0 mg-0 tf-y-5" width="36" height="36">
+      <p className="flex-center pd-0 mg-0 tf-y-5" >
         ex
       </p>
     ),
