@@ -17,9 +17,19 @@ const Follow = () => {
 
   return (
     <section
-      className={`${isHomePage ? "mt-12 pb-8 lg:mt-0 lg:pb-2 lg:fixed lg:right-8 lg:bottom-4" : "fixed top-20 right-0 left-0"}`}
+      className={`w-full lg:w-[80px] ${
+        isHomePage
+          ? "mt-12 pb-8 lg:mt-0 lg:pb-2 lg:fixed lg:-right-5 lg:bottom-4"
+          : "fixed flex items-center justify-center top-24 lg:top-[570px] lg:fixed lg:right-0 lg:bottom-4"
+      }`}
     >
-      <div className={`${isHomePage ? "flex justify-center gap-3 lg:flex lg:flex-col lg:gap-[6px] lg:justify-center" : "flex justify-center" } `}>
+      <div
+        className={`${
+          isHomePage
+            ? "flex justify-center gap-1 lg:flex lg:flex-col lg:gap-[6px] lg:justify-center"
+            : "flex lg:flex-col"
+        } `}
+      >
         {socials?.map(({ name, icon, url }) => (
           <Link
             to={url}
