@@ -20,8 +20,10 @@ import {
   SiTailwindcss,
   SiReactquery,
   SiRedux,
-  SiHashnode
+  SiHashnode,
 } from "react-icons/si";
+
+import todobuddy from "../assets/todobuddy.png";
 
 export const navigationUrls = [
   {
@@ -122,11 +124,7 @@ export const languages = [
   },
   {
     name: "expressjs",
-    icon: (
-      <p className="flex-center pd-0 mg-0 tf-y-5" >
-        ex
-      </p>
-    ),
+    icon: <p className="flex-center pd-0 mg-0 tf-y-5">ex</p>,
     color: "#ffffff",
     desc: "ExpressJS is a javascript library. The primary use of Express is to provide server-side logic for web and mobile applications, and as such it is used all over the place.",
   },
@@ -171,5 +169,16 @@ export const languages = [
     icon: <SiCanva />,
     color: "#61DBFB",
     desc: "Canva is a graphic design platform, used to create social media graphics, presentations, posters, documents and other visual content.",
+  },
+];
+
+export const projects = [
+  {
+    name: "TodoBuddy",
+    image: todobuddy,
+    github_url: "",
+    site_url: "https://sachin-todobuddy.netlify.app/",
+    desc: "TodoBuddy is a user-friendly todo list app meticulously crafted with React and Tailwind CSS. Effortlessly manage your tasks with features like task creation, priority and category sorting, and an intuitive interface.",
+    stack: [<SiReact />, <SiTailwindcss />],
   },
 ];
