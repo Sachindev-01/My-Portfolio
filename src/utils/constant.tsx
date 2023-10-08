@@ -47,7 +47,7 @@ export const navigationUrls = [
 export const socials = [
   {
     name: "github",
-    url: "https://github.com/ImAnshuJoshi/",
+    url: "https://github.com/Sunny480",
     icon: <FaGithub />,
   },
   {
@@ -176,9 +176,22 @@ export const projects = [
   {
     name: "TodoBuddy",
     image: todobuddy,
-    github_url: "",
+    github_url: "https://github.com/Sunny480",
     site_url: "https://sachin-todobuddy.netlify.app/",
-    desc: "TodoBuddy is a user-friendly todo list app meticulously crafted with React and Tailwind CSS. Effortlessly manage your tasks with features like task creation, priority and category sorting, and an intuitive interface.",
-    stack: [<SiReact />, <SiTailwindcss />],
+    keyFeatures: [
+      "Effortless task creation with names, descriptions, due dates, priorities, and categories.",
+      "Intuitive and user-friendly interface.",
+      "Responsive design for task management on various devices.",
+    ],
+    stack: [
+      {
+        icon: <SiReact />,
+        color: "#713abe",
+      },
+      {
+        icon: <SiTailwindcss />,
+        color: "#3f9eee",
+      },
+    ],
   },
 ];

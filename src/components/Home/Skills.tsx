@@ -1,4 +1,5 @@
 import { languages } from "../../utils/constant";
+import LanguageIcon from "../LanguageIcon/LanguageIcon";
 
 const Skills = () => {
   return (
@@ -19,13 +20,9 @@ const Skills = () => {
             My Skills
           </strong>
         </div>
-
         <div className="mt-10 flex justify-center flex-wrap gap-2 lg:gap-6 text-center">
           {languages.map(({ name, icon, color }) => (
-            <div key={name} style={{color: color}} className={`w-[100px] lg:w-[150px] flex flex-col items-center justify-center gap-2 p-4 bg-gray-800 rounded-md hover:scale-110 transition duration-150 ease-in-out cursor-pointer`}>
-              <p className="text-6xl lg:text-7xl">{icon}</p>
-              <strong className="text-sm font-font-nunito capitalize">{name}</strong>
-            </div>
+            <LanguageIcon key={name} name={name} icon={icon} color={color} />
           ))}
         </div>
       </div>

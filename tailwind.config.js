@@ -16,6 +16,9 @@ export default {
         "font-mono": ["Roboto Mono", "monospace"],
         "font-nunito": ["Nunito", "sans-serif"],
       },
+      boxShadow: {
+        card: "0 0 10px #aad4f7",
+      },
     },
   },
   plugins: [],

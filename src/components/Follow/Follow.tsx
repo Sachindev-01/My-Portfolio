@@ -19,20 +19,21 @@ const Follow = () => {
     <section
       className={`w-full lg:w-[80px] ${
         isHomePage
-          ? "mt-12 pb-8 lg:mt-0 lg:pb-2 lg:fixed lg:-right-5 lg:bottom-4"
-          : "fixed flex items-center justify-center top-24 lg:top-[570px] lg:fixed lg:right-0 lg:bottom-4"
+          ? "mt-12 pb-8 lg:mt-0 lg:pb-2 lg:fixed lg:-right-2 lg:bottom-4"
+          : "absolute flex items-center justify-center top-24 lg:top-[570px] lg:fixed lg:right-0 lg:bottom-4"
       }`}
     >
       <div
         className={`${
           isHomePage
-            ? "flex justify-center gap-1 lg:flex lg:flex-col lg:gap-[6px] lg:justify-center"
+            ? "flex justify-center items-center gap-1 lg:flex lg:flex-col lg:gap-[6px] lg:justify-center"
             : "flex lg:flex-col"
         } `}
       >
         {socials?.map(({ name, icon, url }) => (
           <Link
             to={url}
+            target="_blank"
             key={name}
             className="text-2xl text-[#3f9eee] p-2 rounded-full hover:scale-150 transition duration-150 ease-in-out"
           >
