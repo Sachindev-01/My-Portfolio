@@ -24,6 +24,7 @@ import {
 } from "react-icons/si";
 
 import todobuddy from "../assets/todobuddy.png";
+import lighttube from "../assets/lightTube.png";
 
 export const navigationUrls = [
   {
@@ -191,6 +192,35 @@ export const projects = [
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
+      },
+    ],
+  },
+  {
+    name: "LightTube",
+    image: lighttube,
+    github_url: "https://github.com/Sunny480",
+    site_url: "https://lighttube.netlify.app/",
+    keyFeatures: [
+      "Real time search suggestions (cached and debounced)",
+      "Live chat simulation (using Api polling concept)",
+      "Nested comments ( n level of nested comments )",
+      "Infinite scroll for videos on feed.",
+      "Shimmer effect while loading.",
+      "Lazy loading",
+      "Fully responsive.",
+    ],
+    stack: [
+      {
+        icon: <SiTailwindcss />,
+        color: "#3f9eee",
+      },
+      {
+        icon: <SiReact />,
+        color: "#713abe",
+      },
+      {
+        icon: <SiRedux />,
+        color: "#713ABE",
       },
     ],
   },

@@ -29,10 +29,10 @@ const ProjectCard = ({ project, reverse }: ProjectCardProps) => {
     <div
       className={`flex flex-col lg:flex-row flex-wrap ${
         reverse ? "lg:flex-row-reverse" : ""
-      } justify-between gap-2 mb-28`}
+      } justify-between gap-8 mb-28`}
     >
-      <div className="px-2 lg:px-12">
-        <Tilt className="flex-1 shadow-card lg:h-72 ">
+      <div className="flex-1 px-2">
+        <Tilt className=" shadow-card lg:h-72 ">
           <img
             src={image}
             alt="a adorable dog"
@@ -40,7 +40,7 @@ const ProjectCard = ({ project, reverse }: ProjectCardProps) => {
           />
         </Tilt>
       </div>
-      <div className="flex-1 mt-3 lg:mt-0">
+      <div className="flex-1">
         <strong className="text-2xl text-[#d4e9fb] font-font-calibre">
           {name}
         </strong>
