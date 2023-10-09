@@ -186,6 +186,10 @@ export const projects = [
     ],
     stack: [
       {
+        icon: <SiHtml5 />,
+        color: "#e34c26",
+      },
+      {
         icon: <SiReact />,
         color: "#713abe",
       },
@@ -211,6 +215,10 @@ export const projects = [
     ],
     stack: [
       {
+        icon: <SiHtml5 />,
+        color: "#e34c26",
+      },
+      {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
       },
@@ -223,5 +231,25 @@ export const projects = [
         color: "#713ABE",
       },
     ],
+  },
+];
+
+export const blogs = [
+  {
+    title: "The Great Equality Debate: == vs ===  in JavaScript",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/xG8IQMqMITM/upload/c2832a449425502bb1ea2e10c44f095e.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    blog_url:
+      "https://easily-explain.hashnode.dev/difference-between-and-in-javascript",
+    language: "javascript",
+  },
+  {
+    title:
+      "Hoisting In Javascript ( Part - 1 ). How to stay on Top of Your Code",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1680167915888/55919b16-1cec-4139-b418-3cfd9df1fe08.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    blog_url:
+      "https://easily-explain.hashnode.dev/hoisting-in-javascript-part-1-how-to-stay-on-top-of-your-code",
+    language: "javascript",
   },
 ];
