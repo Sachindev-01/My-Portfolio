@@ -18,6 +18,7 @@ export default {
       },
       boxShadow: {
         card: "0 0 10px #aad4f7",
+        contactShadow: "0 30px 60px rgba(0,0,0,.4)",
       },
     },
   },
