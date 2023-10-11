@@ -26,13 +26,14 @@ const Contact = () => {
                   type="text"
                   name="name"
                   placeholder="NAME"
+                  required
                   className="bg-transparent border-b-2 border-slate-600 p-2 outline-none"
                 />
                 <input
                   type="tel"
                   name="phoneNumber"
                   placeholder="CONTACT NO"
-                  className="bg-transparent border-b-2 border-slate-600 p-2 outline-none"
+                  className="bg-transparent border-b-2 border-slate-600 p-2 outline-none" required
                 />
                 <textarea
                   name="message"
