@@ -4,7 +4,7 @@ import Skills from "./Skills";
 
 const Home = () => {
   return (
-    <section className="pt-44 lg:py-44">
+    <section className="pt-32 lg:py-44">
       <div className="flex flex-col items-center space-y-8 lg:flex-row-reverse lg:justify-center lg:space-y-0 lg:space-x-10">
         <div className="">
           <img
@@ -30,7 +30,8 @@ const Home = () => {
             <p className="text-[#8892b0] text-lg font-font-nunito mt-6 lg:w-[70%]">
               I am a full stack developer. I am currently doing my BCA in
               computer-science from Maharaja Agrasen University, Himachal
-              Pradesh. I am currently in my 3rd year of Graduation. I love JavaScript, even though I don't know about it very well yet 😁.
+              Pradesh. I am currently in my 3rd year of Graduation. I love
+              JavaScript, even though I don't know about it very well yet 😁.
             </p>
           </div>
         </div>
