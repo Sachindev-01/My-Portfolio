@@ -1,4 +1,45 @@
+import { useState } from "react";
+
+import emailjs from "@emailjs/browser";
+
+import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "../../../secreatKeys";
+
+type TemplateProps = {
+  from_name: string;
+  from_phoneNumber: string | number;
+  to_name: string;
+  message: string;
+};
+
 const Contact = () => {
+  const [name, setName] = useState<string>("");
+  const [phoneNumber, setPhoneNumber] = useState<number | string>("");
+  const [message, setMessage] = useState<string>("");
+
+  function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    const templateParams: TemplateProps = {
+      from_name: name,
+      from_phoneNumber: phoneNumber,
+      to_name: "Sachin kumar",
+      message: message,
+    };
+
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then((response) => {
+        console.log("Email sent successfully! ", response);
+        setName("");
+        setPhoneNumber("");
+        setMessage("");
+        alert("Email sent successfully!");
+      })
+      .catch((error) => {
+        console.log("Error sending email! ", error);
+      });
+  }
+
   return (
     <section className="py-44 px-2 lg:px-14 lg:h-screen">
       <div className="flex items-center justify-center ">
@@ -21,35 +62,47 @@ const Contact = () => {
               contact me
             </div>
             <div className="">
-              <form className="flex flex-col gap-2">
+              <form onSubmit={onSubmit} className="flex flex-col gap-2">
                 <input
                   type="text"
                   name="name"
+                  value={name}
                   placeholder="NAME"
                   required
+                  onChange={(e) => setName(e.target.value)}
                   className="bg-transparent border-b-2 border-slate-600 p-2 outline-none"
                 />
                 <input
                   type="tel"
                   name="phoneNumber"
+                  value={phoneNumber}
                   placeholder="CONTACT NO"
-                  className="bg-transparent border-b-2 border-slate-600 p-2 outline-none" required
+                  required
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  className="bg-transparent border-b-2 border-slate-600 p-2 outline-none"
                 />
                 <textarea
                   name="message"
+                  value={message}
                   cols={30}
                   placeholder="MESSAGE"
+                  required
+                  onChange={(e) => setMessage(e.target.value)}
                   className="bg-transparent border-2 border-slate-600 p-2 outline-none mt-4  max-h-44"
                 ></textarea>
-                <button
-                  type="submit"
-                  className="text-[#3f9eee] text-lg uppercase text-end mt-3 hover:text-slate-500 transition duration-150 ease-in-out active:text-[#3f9eee]"
-                >
-                  Send
-                </button>
+                <div className="text-right">
+                  <button
+                    type="submit"
+                    value={message}
+                    className="text-[#3f9eee] text-lg uppercase mt-3 hover:text-slate-500 transition duration-150 ease-in-out active:text-[#3f9eee]"
+                  >
+                    Send
+                  </button>
+                </div>
               </form>
             </div>
           </div>
+          
           <div className="px-8 pb-12">
             <div className="flex gap-2 font-font-nunito">
               <p className="capitalize text-slate-600">contact No :</p>
