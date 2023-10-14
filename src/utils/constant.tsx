@@ -252,4 +252,13 @@ export const blogs = [
       "https://easily-explain.hashnode.dev/hoisting-in-javascript-part-1-how-to-stay-on-top-of-your-code",
     language: "javascript",
   },
+  {
+    title:
+      "Hoisting in JavaScript Practice Question",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/upload/v1680726549150/383a29a3-7bf5-4030-ac7a-91d7e933ae15.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    blog_url:
+      "https://easily-explain.hashnode.dev/hoisting-in-javascript-practice-question",
+    language: "javascript",
+  },
 ];
