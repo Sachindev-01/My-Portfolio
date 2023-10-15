@@ -25,6 +25,7 @@ import {
 
 import todobuddy from "../assets/todobuddy.png";
 import lighttube from "../assets/lightTube.png";
+import tesla from "../assets/tesla.png";
 
 export const navigationUrls = [
   {
@@ -232,6 +233,38 @@ export const projects = [
       },
     ],
   },
+  {
+    name: "Tesla App",
+    image: tesla,
+    github_url: "https://github.com/Sunny480",
+    site_url: "https://sachin-tesla-app.netlify.app/",
+    keyFeatures: [
+      "Explore the latest Tesla car models with detailed specifications.",
+      "Customize features of Tesla cars to visualize your dream configuration.",
+      "Utilize lazy loading for optimized loading of images and components.",
+      "Implement custom hooks to enhance reusability and maintainability.",
+      "Manage the global state efficiently with Redux Toolkit.",
+      "Local storage to persist car data.",
+    ],
+    stack: [
+      {
+        icon: <SiHtml5 />,
+        color: "#e34c26",
+      },
+      {
+        icon: <SiTailwindcss />,
+        color: "#3f9eee",
+      },
+      {
+        icon: <SiReact />,
+        color: "#713abe",
+      },
+      {
+        icon: <SiRedux />,
+        color: "#713ABE",
+      },
+    ],
+  },
 ];
 
 export const blogs = [
@@ -253,8 +286,7 @@ export const blogs = [
     language: "javascript",
   },
   {
-    title:
-      "Hoisting in JavaScript Practice Question",
+    title: "Hoisting in JavaScript Practice Question",
     image:
       "https://cdn.hashnode.com/res/hashnode/image/upload/v1680726549150/383a29a3-7bf5-4030-ac7a-91d7e933ae15.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
     blog_url:
