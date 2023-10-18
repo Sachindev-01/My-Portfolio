@@ -293,4 +293,12 @@ export const blogs = [
       "https://easily-explain.hashnode.dev/hoisting-in-javascript-practice-question",
     language: "javascript",
   },
+  {
+    title: "'Undefined' in javascript : Amazing Cases",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/AXqMy8MSSdk/upload/0bfcd65ef90650ebcc7eb267f4f1dfd1.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    blog_url:
+      "https://easily-explain.hashnode.dev/undefined-in-javascript-amazing-cases",
+    language: "javascript",
+  },
 ];
