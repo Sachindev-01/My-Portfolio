@@ -13,7 +13,7 @@ const Home = () => {
             className="w-64 h-64 lg:w-[1100px] lg:h-[450px] rounded-full border-[3px] border-[#3f9eee]"
           />
         </div>
-        <div className="px-4 flex flex-start flex-col">
+        <div className="px-2 flex flex-start flex-col">
           <div className="flex gap-2 items-center">
             <span className="text-[#3f9eee] font-semibold">Hey</span>
             <img src={helloGif} className="w-6" />

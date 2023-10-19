@@ -43,7 +43,7 @@ const Contact = () => {
   return (
     <section className="py-44 px-2 lg:px-14 lg:h-screen">
       <div className="flex items-center justify-center ">
-        <div className="w-[600px] rounded-3xl shadow-contactShadow">
+        <div className="min-w-[330px] max-w-[600px] rounded-3xl shadow-contactShadow">
           <div className="p-4 flex items-center justify-between bg-slate-700 rounded-tl-3xl rounded-tr-3xl">
             <div className="flex gap-2">
               <p className="bg-red-700 w-3 h-3 rounded-full"></p>

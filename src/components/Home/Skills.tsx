@@ -3,8 +3,8 @@ import LanguageIcon from "../LanguageIcon/LanguageIcon";
 
 const Skills = () => {
   return (
-    <section className="w-full mt-44">
-      <div className="max-w-7xl mx-auto px-4 lg:px-12">
+    <section className="w-full mt-32 md:44">
+      <div className="max-w-7xl mx-auto px-1 lg:px-12">
         <div className="flex gap-2 items-center justify-center before:border-t before:flex-1 before:border-gray-500 after:border-t after:flex-1 after:border-gray-500">
           <svg
             stroke="currentColor"
@@ -20,7 +20,7 @@ const Skills = () => {
             My Skills
           </strong>
         </div>
-        <div className="mt-10 flex justify-center flex-wrap gap-2 lg:gap-6 text-center">
+        <div className="mt-10 flex justify-center flex-wrap gap-3 lg:gap-6 text-center">
           {languages.map(({ name, icon, color }) => (
             <LanguageIcon key={name} name={name} icon={icon} color={color} />
           ))}
