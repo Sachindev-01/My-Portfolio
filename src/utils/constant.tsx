@@ -301,4 +301,12 @@ export const blogs = [
       "https://easily-explain.hashnode.dev/undefined-in-javascript-amazing-cases",
     language: "javascript",
   },
+  {
+    title: "Null and Undefined in JavaScript: The Fine Line Between Them",
+    image:
+      "https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/q10VITrVYUM/upload/ac6cb40a649fd016cb51105f6c53c9fa.jpeg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp",
+    blog_url:
+      "https://easily-explain.hashnode.dev/4pyficlwnzeh8j2ygvcdl7nwnze5ipcdl67wnze78j2xssdwnzeo8j2xucdl7hwnzey8j2xscdl7bwnze78j2xsvcdl7eg8j2xtvcdl7sg8j2xnfcdl67wnzid8j2xrvcdl6bwnzew8j2xvcdl7bwnze98j2ygtog8j2xpcdl7xwnzeyipcdl5nwnze28j2xucdl7ig8j2xncdl7bwnze78j2xsidwnzev8j2xsvcdmihwnzie8j2xsvcdl7lwnze7ipcdl6fwnze18j2xsvcdl7oi",
+    language: "javascript",
+  },
 ];
