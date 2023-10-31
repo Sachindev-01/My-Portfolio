@@ -204,7 +204,7 @@ export const projects = [
     name: "LightTube",
     image: lighttube,
     github_url: "https://github.com/Sunny480",
-    site_url: "https://lighttube.netlify.app/",
+    site_url: "https://sachin-lighttube.netlify.app/",
     keyFeatures: [
       "Real time search suggestions (cached and debounced)",
       "Live chat simulation (using Api polling concept)",
@@ -234,17 +234,16 @@ export const projects = [
     ],
   },
   {
-    name: "Tesla App",
+    name: "AutoGaze App",
     image: tesla,
     github_url: "https://github.com/Sunny480",
-    site_url: "https://sachin-tesla-app.netlify.app/",
+    site_url: "https://sachin-autogaze.netlify.app/",
     keyFeatures: [
       "Explore the latest Tesla car models with detailed specifications.",
       "Customize features of Tesla cars to visualize your dream configuration.",
       "Utilize lazy loading for optimized loading of images and components.",
       "Implement custom hooks to enhance reusability and maintainability.",
-      "Manage the global state efficiently with Redux Toolkit.",
-      "Local storage to persist car data.",
+      "Implemented cart features using Redux Toolkit for adding, deleting and managing item quantities.",
     ],
     stack: [
       {
