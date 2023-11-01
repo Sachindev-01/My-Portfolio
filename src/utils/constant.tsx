@@ -189,17 +189,17 @@ export const projects = [
       {
         icon: <SiHtml5 />,
         color: "#e34c26",
-        name: "HTML5",
+        iconName: "HTML5",
       },
       {
         icon: <SiReact />,
         color: "#713abe",
-        name: "React",
+        iconName: "React",
       },
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
-        name: "Tailwind",
+        iconName: "Tailwind",
       },
     ],
   },
@@ -221,22 +221,22 @@ export const projects = [
       {
         icon: <SiHtml5 />,
         color: "#e34c26",
-        name: "HTML5",
+        iconName: "HTML5",
       },
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
-        name: "Tailwind",
+        iconName: "Tailwind",
       },
       {
         icon: <SiReact />,
         color: "#713abe",
-        name: "React",
+        iconName: "React",
       },
       {
         icon: <SiRedux />,
         color: "#713ABE",
-        name: "Redux Toolkit",
+        iconName: "Redux Toolkit",
       },
     ],
   },
@@ -246,8 +246,8 @@ export const projects = [
     github_url: "https://github.com/Sunny480",
     site_url: "https://sachin-autogaze.netlify.app/",
     keyFeatures: [
-      "Explore the latest Tesla car models with detailed specifications.",
-      "Customize features of Tesla cars to visualize your dream configuration.",
+      "Explore the latest car models with detailed specifications.",
+      "Customize features of cars to visualize your dream configuration.",
       "Utilize lazy loading for optimized loading of images and components.",
       "Implement custom hooks to enhance reusability and maintainability.",
       "Implemented cart features using Redux Toolkit for adding, deleting and managing item quantities.",
@@ -256,18 +256,22 @@ export const projects = [
       {
         icon: <SiHtml5 />,
         color: "#e34c26",
+        iconName: "HTML5",
       },
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
+        iconName: "Tailwind",
       },
       {
         icon: <SiReact />,
         color: "#713abe",
+        iconName: "React",
       },
       {
         icon: <SiRedux />,
         color: "#713ABE",
+        iconName: "Redux Toolkit",
       },
     ],
   },
