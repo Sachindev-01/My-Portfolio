@@ -189,14 +189,17 @@ export const projects = [
       {
         icon: <SiHtml5 />,
         color: "#e34c26",
+        name: "HTML5",
       },
       {
         icon: <SiReact />,
         color: "#713abe",
+        name: "React",
       },
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
+        name: "Tailwind",
       },
     ],
   },
@@ -218,18 +221,22 @@ export const projects = [
       {
         icon: <SiHtml5 />,
         color: "#e34c26",
+        name: "HTML5",
       },
       {
         icon: <SiTailwindcss />,
         color: "#3f9eee",
+        name: "Tailwind",
       },
       {
         icon: <SiReact />,
         color: "#713abe",
+        name: "React",
       },
       {
         icon: <SiRedux />,
         color: "#713ABE",
+        name: "Redux Toolkit",
       },
     ],
   },
