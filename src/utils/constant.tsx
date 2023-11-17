@@ -49,7 +49,7 @@ export const navigationUrls = [
 export const socials = [
   {
     name: "github",
-    url: "https://github.com/Sunny480",
+    url: "https://github.com/sachinDev07",
     icon: <FaGithub />,
   },
   {
