@@ -178,7 +178,7 @@ export const projects = [
   {
     name: "TodoBuddy",
     image: todobuddy,
-    github_url: "https://github.com/Sunny480",
+    github_url: "https://github.com/sachinDev07",
     site_url: "https://sachin-todobuddy.netlify.app/",
     keyFeatures: [
       "Effortless task creation with names, descriptions, due dates, priorities, and categories.",
