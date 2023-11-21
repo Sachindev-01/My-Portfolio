@@ -206,7 +206,7 @@ export const projects = [
   {
     name: "LightTube",
     image: lighttube,
-    github_url: "https://github.com/Sunny480",
+    github_url: "https://github.com/sachinDev07",
     site_url: "https://sachin-lighttube.netlify.app/",
     keyFeatures: [
       "Real time search suggestions (cached and debounced)",
