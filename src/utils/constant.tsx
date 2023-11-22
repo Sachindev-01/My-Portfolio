@@ -243,7 +243,7 @@ export const projects = [
   {
     name: "AutoGaze App",
     image: tesla,
-    github_url: "https://github.com/Sunny480",
+    github_url: "https://github.com/sachinDev07",
     site_url: "https://sachin-autogaze.netlify.app/",
     keyFeatures: [
       "Explore the latest car models with detailed specifications.",
