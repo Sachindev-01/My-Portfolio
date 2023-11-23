@@ -27,6 +27,11 @@ import todobuddy from "../assets/todobuddy.png";
 import lighttube from "../assets/lightTube.png";
 import tesla from "../assets/tesla.png";
 
+
+const githubUsername:string = "sachinDev07";
+
+const generateGitHubUrl = (username:string) => `https://github.com/${username}`;
+
 export const navigationUrls = [
   {
     urlName: "Home",
@@ -49,7 +54,7 @@ export const navigationUrls = [
 export const socials = [
   {
     name: "github",
-    url: "https://github.com/sachinDev07",
+    url: generateGitHubUrl(githubUsername),
     icon: <FaGithub />,
   },
   {
@@ -178,7 +183,7 @@ export const projects = [
   {
     name: "TodoBuddy",
     image: todobuddy,
-    github_url: "https://github.com/sachinDev07",
+    github_url: generateGitHubUrl(githubUsername),
     site_url: "https://sachin-todobuddy.netlify.app/",
     keyFeatures: [
       "Effortless task creation with names, descriptions, due dates, priorities, and categories.",
@@ -206,7 +211,7 @@ export const projects = [
   {
     name: "LightTube",
     image: lighttube,
-    github_url: "https://github.com/sachinDev07",
+    github_url: generateGitHubUrl(githubUsername),
     site_url: "https://sachin-lighttube.netlify.app/",
     keyFeatures: [
       "Real time search suggestions (cached and debounced)",
@@ -243,7 +248,7 @@ export const projects = [
   {
     name: "AutoGaze App",
     image: tesla,
-    github_url: "https://github.com/sachinDev07",
+    github_url: generateGitHubUrl(githubUsername),
     site_url: "https://sachin-autogaze.netlify.app/",
     keyFeatures: [
       "Explore the latest car models with detailed specifications.",
