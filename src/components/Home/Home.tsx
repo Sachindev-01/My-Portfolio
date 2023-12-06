@@ -1,6 +1,7 @@
 import profilePic from "../../assets/profile.png";
 import helloGif from "../../assets/hello.gif";
 import Skills from "./Skills";
+import DownloadButton from "../DownloadButton/DownloadButton";
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
               Pradesh. I am currently in my 3rd year of Graduation. I love
               JavaScript, even though I don't know about it very well yet 😁.
             </p>
+            <DownloadButton />
           </div>
         </div>
       </div>
