@@ -21,16 +21,19 @@ import {
   SiReactquery,
   SiRedux,
   SiHashnode,
+  SiExpress,
+  SiRecoil,
 } from "react-icons/si";
 
 import todobuddy from "../assets/todobuddy.png";
 import lighttube from "../assets/lightTube.png";
 import tesla from "../assets/tesla.png";
+import walletpay from "../assets/walletpay.png";
 
+const githubUsername: string = "sachinDev07";
 
-const githubUsername:string = "sachinDev07";
-
-const generateGitHubUrl = (username:string) => `https://github.com/${username}`;
+const generateGitHubUrl = (username: string) =>
+  `https://github.com/${username}`;
 
 export const navigationUrls = [
   {
@@ -181,10 +184,68 @@ export const languages = [
 
 export const projects = [
   {
+    name: "WalletPay",
+    image: walletpay,
+    github_url: generateGitHubUrl(githubUsername),
+    site_url: "https://wallet-pay.vercel.app/",
+    keyFeatures: [
+      "Secure user authentication and authorization",
+      "Account management with balance tracking",
+      "Instant notifications on transactions",
+      "User search and pagination for efficiency",
+      "Light/dark theme options for personalization",
+      "Custom toasters for important alerts",
+      "Simplified logout with a custom hook",
+      "Handled network issues and server crashes gracefully",
+    ],
+    stack: [
+      {
+        icon: <SiTailwindcss />,
+        color: "#3f9eee",
+        iconName: "Tailwind",
+      },
+      {
+        icon: <SiReact />,
+        color: "#713abe",
+        iconName: "React",
+      },
+      {
+        icon: <SiRedux />,
+        color: "#713ABE",
+        iconName: "Redux Toolkit",
+      },
+      {
+        icon: <SiRecoil />,
+        color: "#03AED2",
+        iconName: "Recoil",
+      },
+      {
+        icon: <SiTypescript />,
+        color: "#5AB2FF",
+        iconName: "Typescript",
+      },
+      {
+        icon: <SiExpress />,
+        color: "#FFC100",
+        iconName: "ExpressJs",
+      },
+      {
+        icon: <FaNodeJs />,
+        color: "#FFC100",
+        iconName: "NodeJs",
+      },
+      {
+        icon: <SiMongodb />,
+        color: "#65B741",
+        iconName: "MongoDB",
+      },
+    ],
+  },
+  {
     name: "TodoBuddy",
     image: todobuddy,
     github_url: generateGitHubUrl(githubUsername),
-    site_url: "https://sachin-todobuddy.netlify.app/",
+    site_url: "https://todo-buddy-react.vercel.app/",
     keyFeatures: [
       "Effortless task creation with names, descriptions, due dates, priorities, and categories.",
       "Intuitive and user-friendly interface.",

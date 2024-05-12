@@ -2,10 +2,12 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import Tilt from "react-parallax-tilt";
 import { Link } from "react-router-dom";
+import Tooltip from "../ToolTip";
 
 type StackList = {
   icon: JSX.Element;
   color: string;
+  iconName: string;
 };
 
 type Project = {
@@ -76,13 +78,15 @@ const ProjectCard = ({ project, reverse }: ProjectCardProps) => {
           </h2>
           <div className="flex items-center gap-4 mt-3">
             {stack.map((stackItem, index) => (
-              <p
-                key={index}
-                style={{ color: `${stackItem.color}` }}
-                className={`text-4xl hover:scale-125 transition duration-150 ease-in-out cursor-pointer`}
-              >
-                {stackItem.icon}
-              </p>
+              <Tooltip key={index} text={stackItem.iconName}>
+                <p
+                  key={index}
+                  style={{ color: `${stackItem.color}` }}
+                  className={`text-4xl hover:scale-125 transition duration-150 ease-in-out cursor-pointer`}
+                >
+                  {stackItem.icon}
+                </p>
+              </Tooltip>
             ))}
           </div>
         </div>
