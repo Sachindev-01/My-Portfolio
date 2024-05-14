@@ -32,8 +32,7 @@ import walletpay from "../assets/walletpay.png";
 
 const githubUsername: string = "sachinDev07";
 
-const generateGitHubUrl = (username: string) =>
-  `https://github.com/${username}`;
+const generateGitHubUrl = (username: string) => `https://github.com/${username}`;
 
 export const navigationUrls = [
   {
@@ -186,6 +185,7 @@ export const projects = [
   {
     name: "WalletPay",
     image: walletpay,
+    completionDate: "Apr 3, 2024",
     github_url: generateGitHubUrl(githubUsername),
     site_url: "https://wallet-pay.vercel.app/",
     keyFeatures: [
@@ -244,6 +244,7 @@ export const projects = [
   {
     name: "TodoBuddy",
     image: todobuddy,
+    completionDate: "Nov 25, 2023",
     github_url: generateGitHubUrl(githubUsername),
     site_url: "https://todo-buddy-react.vercel.app/",
     keyFeatures: [
@@ -272,6 +273,7 @@ export const projects = [
   {
     name: "LightTube",
     image: lighttube,
+    completionDate: "Jun 28, 2023",
     github_url: generateGitHubUrl(githubUsername),
     site_url: "https://sachin-lighttube.netlify.app/",
     keyFeatures: [
@@ -309,6 +311,7 @@ export const projects = [
   {
     name: "AutoGaze App",
     image: tesla,
+    completionDate: "Jul 20, 2023",
     github_url: generateGitHubUrl(githubUsername),
     site_url: "https://sachin-autogaze.netlify.app/",
     keyFeatures: [

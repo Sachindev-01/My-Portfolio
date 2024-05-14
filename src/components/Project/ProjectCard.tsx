@@ -12,6 +12,7 @@ type StackList = {
 
 type Project = {
   name: string;
+  completionDate: string;
   image: string;
   keyFeatures: string[];
   github_url: string;
@@ -25,7 +26,15 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project, reverse }: ProjectCardProps) => {
-  const { name, image, keyFeatures, github_url, site_url, stack } = project;
+  const {
+    name,
+    completionDate,
+    image,
+    keyFeatures,
+    github_url,
+    site_url,
+    stack,
+  } = project;
 
   return (
     <div
@@ -43,9 +52,14 @@ const ProjectCard = ({ project, reverse }: ProjectCardProps) => {
         </Tilt>
       </div>
       <div className="flex-1">
-        <strong className="text-2xl text-[#d4e9fb] font-font-calibre">
-          {name}
-        </strong>
+        <div className="flex items-center justify-between">
+          <span className="text-2xl text-[#d4e9fb] font-font-calibre">
+            {name}
+          </span>
+          <span className="mr-8 text-gray-500">
+            Last updated: {completionDate}
+          </span>
+        </div>
         <div className="flex items-center gap-3 mt-3">
           <Link
             to={site_url}
