@@ -20,14 +20,14 @@ const Follow = () => {
       className={`w-full lg:w-[80px] ${
         isHomePage
           ? "mt-12 pb-8 lg:mt-0 lg:pb-2 lg:fixed lg:-right-2 lg:bottom-4"
-          : "absolute flex items-center justify-center top-24 lg:top-[570px] lg:fixed lg:right-0 lg:bottom-4"
+          : "absolute flex items-center justify-center top-24 lg:top-[570px] lg:fixed lg:-right-2 lg:bottom-16"
       }`}
     >
       <div
         className={`${
           isHomePage
             ? "flex justify-center items-center gap-1 lg:flex lg:flex-col lg:gap-[6px] lg:justify-center"
-            : "flex lg:flex-col"
+            : "flex lg:flex-col gap-2"
         } `}
       >
         {socials?.map(({ name, icon, url }) => (
