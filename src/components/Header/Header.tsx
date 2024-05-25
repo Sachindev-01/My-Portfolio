@@ -27,8 +27,8 @@ const Header = () => {
   }, []);
 
   return (
-    <section className="fixed h-24 w-full bg-transparent lg:backdrop-blur-md">
-      <header className="max-w-7xl mx-auto px-4 py-3 fixed left-0 right-0 z-40 ">
+    <section className="fixed h-24 w-full bg-transparent lg:backdrop-blur-md z-40">
+      <header className="max-w-7xl mx-auto px-4 py-3 fixed left-0 right-0">
         <nav
           className={`${
             isScrolling
