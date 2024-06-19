@@ -31,8 +31,11 @@ import tesla from "../assets/tesla.png";
 import walletpay from "../assets/walletpay.png";
 
 const githubUsername = import.meta.env.VITE_GITHUB_USERNAME as string;
+const linkedinUrl = import.meta.env.VITE_LINKEDIN_URL as string;
+const twitterUrl = import.meta.env.VITE_TWITTER_URL as string
+const hashnodeUrl = import.meta.env.VITE_HASHNODE_URL as string
 
-const generateGitHubUrl = (username: string) => `https://github.com/${username}`;
+const generateGitHubUrl = (username: string): string =>  { console.log(username); return `https://github.com/${username}` };
 
 export const navigationUrls = [
   {
@@ -61,17 +64,17 @@ export const socials = [
   },
   {
     name: "linkedin",
-    url: import.meta.env.VITE_LINKEDIN_URL as string,
+    url: linkedinUrl,
     icon: <FaLinkedinIn />,
   },
   {
     name: "twitter",
-    url: import.meta.env.VITE_TWITTER_URL as string,
+    url: twitterUrl,
     icon: <FaTwitter />,
   },
   {
     name: "hashnode",
-    url: import.meta.env.VITE_HASHNODE_URL as string,
+    url: hashnodeUrl,
     icon: <SiHashnode />,
   },
 ];
