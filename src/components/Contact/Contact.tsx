@@ -105,8 +105,8 @@ const Contact = () => {
           
           <div className="px-8 pb-12">
             <div className="flex gap-2 font-font-nunito">
-              <p className="capitalize text-slate-600">contact No :</p>
-              <p className="text-slate-600">+91 7018185418</p>
+              {/* <p className="capitalize text-slate-600">contact No :</p> */}
+              {/* <p className="text-slate-600">+91 7018185418</p> */}
             </div>
           </div>
         </div>
