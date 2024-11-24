@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 body {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
 .changeWord::after {
-    content: var(--word-content, "Web developer"); 
-    animation: wordChange 3s linear infinite alternate;
+  content: var(--word-content, 'Web developer');
+  animation: wordChange 5s linear infinite alternate;
+}
+
+@keyframes wordChange {
+  0% {
+    --word-content: 'Full Stack Web developer';
   }
-  
-  @keyframes wordChange {
-    0% {
-      --word-content: "Web developer";
-    }
-    50% {
-      color: #081d2f;
-    }
-    100% {
-      --word-content: "Student";
-    }
+  25% {
+    --word-content: 'Learner';
   }
-  
-  
+  50% {
+    --word-content: 'Problem Solver';
+  }
+  75% {
+    --word-content: 'Curious';
+  }
+  100% {
+    --word-content: 'Dreamer';
+  }
+}
